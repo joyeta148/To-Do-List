@@ -5,12 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To-Do List</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
 </head>
 <body>
-    <h1 align="center">MAKE A LIST OF THE TASKS</h1>
-    <label>Add your task:</label>
-    <input type="text" placeholder="Enter your task:">
+    <h1 align="center">MAKE A LIST OF YOUR TASKS</h1>
+    <div class="container">
+        <label for="newTask">ADD YOUR TASK</label>
+        <input type="text" class="form-control" id="newTask" aria-describedby="task" placeholder="Enter your task">
+        <small id="task" class="form-text text-muted">Add a small text which dexcribes your task.</small>
+        <div class="row">
+            <button type="button" class="col btn btn-success m-2 p-3">Add</button>
+            <button type="button" class=" col btn btn-warning m-2">Reset</button>
+            <button type="button" class=" col btn btn-primary m-2">Sort</button>
+            <button type="button" class=" col btn btn-danger m-2">CleanUp</button>
+        </div>
+    </div>
+    
 </body>
 </html>
