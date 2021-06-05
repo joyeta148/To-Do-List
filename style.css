@@ -1,0 +1,5 @@
+
+#ulTask li.done{
+    text-decoration: line-through;
+    color: green;
+}
