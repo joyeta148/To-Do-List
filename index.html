@@ -10,24 +10,65 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.js" integrity="sha512-ia48mJh6IXv6baAI07Ib/crgsG/MD4tbSnOndWLo3GSExMhYsn1xPbni40VamCaXWk79t1dxi/JahsqOFazkew==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <link rel="stylesheet" href="style.css">
     <script async defer src="script.js"></script>
 </head>
 <body>
-    <h1 align="center">MAKE A LIST OF YOUR TASKS</h1>
-    <div class="container">
-        <label for="newTask">ADD YOUR TASK</label>
-        <input type="text" class="form-control" id="newTask" aria-describedby="task" placeholder="Enter your task">
-        <small id="task" class="form-text text-muted">Add a small text which dexcribes your task.</small>
-        <div class="row">
-            <button id="btnAdd" type="button" disabled class="col btn btn-success m-2 p-3">Add</button>
-            <button id="btnReset" type="button" disabled class=" col btn btn-warning m-2">Reset</button>
-            <button id="btnSort" type="button" disabled class=" col btn btn-primary m-2">Sort</button>
-            <button id="btnCleanup" type="button" disabled class=" col btn btn-danger m-2">CleanUp</button>
+    <div class="m-5">
+        <h1 align="center">MAKE A LIST OF YOUR TASKS</h1>
+        <div class="row m-2">
+            <div class="mb-3 col-xl-7 col-md-7 col-sm-12">
+                <label for="newTask"><h4>ADD YOUR TASK</h4></label>
+                <input type="text" class="form-control" id="newTask" aria-describedby="task" placeholder="Enter your task">
+                <small id="task" class="form-text text-muted"><h5>Add a small text which dexcribes your task.</h5></small>
+            </div>
+            
+            <div class="col-md-5">
+                <div class="row m-2">
+                    <div class="col-6 col-sm-3 col-md-6 p-1">
+                        <button id="btnAdd" type="button" disabled class="col btn btn-success m-2">
+                            Add <i class = "fa fa-plus"></i>
+                        </button>
+                    </div>
+        
+                    <div class="col-6 col-sm-3 col-md-6 p-1">
+                        <button id="btnReset" type="button" disabled class=" col btn btn-warning m-2">
+                            Reset <i class = "fa fa-backspace"></i>
+                        </button>
+                    </div>
+        
+                    <div class="col-6 col-sm-3 col-md-6 p-1">
+                        <button id="btnSort" type="button" disabled class=" col btn btn-primary m-2">
+                            Sort <i class = "fa fa-sort-amount-down"></i>
+                        </button>
+                    </div>
+        
+                    <div class="col-6 col-sm-3 col-md-6 p-1">
+                        <button id="btnCleanup" type="button" disabled class=" col btn btn-danger m-2">
+                            CleanUp <i class = "fa fa-trash-alt"></i>
+                        </button>
+                    </div>
+                </div>
+        </div>
+        
+            
         </div>
 
         <ul class="list-group" id = "ulTask"></ul>
+
+        <div class="instructions m-2">
+            <br><hr>
+            <h3 align="center">Basic Instructions</h3>
+            <font>
+                🌟 Press <b>ADD</b> ➕ to add new tasks <br>
+                🌟 Press <b>RESET</b> 🔙 to reset the tasks <br>
+                🌟 Press <b>SORT</b> ⬇️ to sort the tasks <br>
+                🌟 Press <b>CLEANUP</b> 🗑️to add new tasks <br>
+                🌟 Click on the task from the list to mark it done.
+            </font>
+        </div>
     </div>
     
 </body>

@@ -3,3 +3,32 @@
     text-decoration: line-through;
     color: green;
 }
+
+h1{
+    background-color: #b47de7c4;
+    border: dashed rgb(45, 2, 51) 4px;
+}
+
+
+body{
+    background-color: rgba(85, 222, 240, 0.452);
+}
+
+
+.list-group{
+    color:crimson;
+    font-size: 15pt;
+}
+
+ul{
+    border: solid;
+}
+
+hr{
+    background-color: darkblue;
+    height: 2px;
+}
+
+font{
+    font-size: 15pt;
+}
